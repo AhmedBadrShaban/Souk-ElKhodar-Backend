@@ -2,11 +2,9 @@ import { app } from './app.js';
 import { pool } from './db.js';
 import { config } from './config.js';
 import { randomUUID } from 'node:crypto';
-import { attachAnnouncements } from './realtime.js';
 
 if (!['development','test'].includes(config.NODE_ENV)) throw new Error('Smoke test may run only in development or test');
 const server=app.listen(0);
-const stopAnnouncements=attachAnnouncements(server);
 const address=server.address();if(!address||typeof address==='string') throw new Error('Missing test port');
 const base=`http://127.0.0.1:${address.port}/v1`;
 const request=async(path:string,options?:RequestInit)=>{const response=await fetch(`${base}${path}`,options);return{status:response.status,headers:response.headers,body:await response.json() as {data?:unknown;error?:unknown}};};
@@ -56,8 +54,7 @@ try{
   const areas=await request('/areas');assert(areas.status===200,'Areas failed');
   const status=await request('/store/status');assert(status.status===200,'Store status failed');
   const catalogStream=await fetch(`${base}/stream/catalog`);assert(catalogStream.status===200&&catalogStream.headers.get('content-type')?.includes('text/event-stream'),'Catalog SSE failed');await catalogStream.body?.cancel();
-  const socket=new WebSocket(`ws://127.0.0.1:${address.port}/v1/announcements/ws`);
-  try{const snapshot=await new Promise<string>((resolve,reject)=>{const timeout=setTimeout(()=>reject(new Error('Announcement WebSocket timeout')),5000);socket.onmessage=message=>{clearTimeout(timeout);resolve(String(message.data));};socket.onerror=()=>{clearTimeout(timeout);reject(new Error('Announcement WebSocket failed'));};});assert(JSON.parse(snapshot).type==='announcements.snapshot','Announcement snapshot failed');}finally{await new Promise<void>(resolve=>{socket.onclose=()=>resolve();socket.close();setTimeout(resolve,1000).unref();});}
+  const announcementStream=await fetch(`${base}/announcements/stream`);assert(announcementStream.status===200&&announcementStream.headers.get('content-type')?.includes('text/event-stream'),'Announcement SSE failed');await announcementStream.body?.cancel();
   const item=(products.body.data as {items?:{id:string;price:number}[]} | {id:string;price:number}[]);
   const product=Array.isArray(item)?item[0]:item.items?.[0];
   const area=(areas.body.data as {id:string;shippingFee:number;isActive:boolean}[]).find(entry=>entry.isActive);
@@ -87,4 +84,4 @@ try{
     const cancelled=await request(`/orders/${orderId}/cancel?token=${first.trackingToken}`,{method:'POST'});assert(cancelled.status===200&&(cancelled.body.data as {status:string}).status==='cancelled','Cancellation failed');
   }
   console.log(`Smoke passed: health, catalog, admin login, RBAC, summary, settings, catalog CRUD/repricing, customer OTP/registration/address/history${orderId?', order creation/idempotency/tracking/cancellation':''}`);
-}finally{if(originalSlogan!==undefined)await pool.query("UPDATE site_config SET value=jsonb_set(value,'{brand,sloganEn}',$1::jsonb) WHERE id=true",[JSON.stringify(originalSlogan)]);if(productId){await pool.query('DELETE FROM product_price_history WHERE product_id=$1',[productId]);await pool.query('DELETE FROM products WHERE id=$1',[productId]);}if(categoryId)await pool.query('DELETE FROM categories WHERE id=$1',[categoryId]);if(orderId){await pool.query('DELETE FROM idempotency_records WHERE order_id=$1',[orderId]);await pool.query('DELETE FROM order_status_events WHERE order_id=$1',[orderId]);await pool.query('DELETE FROM order_items WHERE order_id=$1',[orderId]);await pool.query('DELETE FROM orders WHERE id=$1',[orderId]);}if(customerId){await pool.query('DELETE FROM customer_sessions WHERE customer_id=$1',[customerId]);await pool.query('DELETE FROM saved_addresses WHERE customer_id=$1',[customerId]);await pool.query('DELETE FROM customers WHERE id=$1',[customerId]);}if(testPhone){await pool.query('DELETE FROM registration_tokens WHERE phone_e164=$1',[testPhone]);await pool.query('DELETE FROM otp_challenges WHERE phone_e164=$1',[testPhone]);await pool.query('DELETE FROM auth_attempts WHERE subject_key=$1',[testPhone]);}stopAnnouncements();server.close();server.closeAllConnections();await pool.end();}
+}finally{if(originalSlogan!==undefined)await pool.query("UPDATE site_config SET value=jsonb_set(value,'{brand,sloganEn}',$1::jsonb) WHERE id=true",[JSON.stringify(originalSlogan)]);if(productId){await pool.query('DELETE FROM product_price_history WHERE product_id=$1',[productId]);await pool.query('DELETE FROM products WHERE id=$1',[productId]);}if(categoryId)await pool.query('DELETE FROM categories WHERE id=$1',[categoryId]);if(orderId){await pool.query('DELETE FROM idempotency_records WHERE order_id=$1',[orderId]);await pool.query('DELETE FROM order_status_events WHERE order_id=$1',[orderId]);await pool.query('DELETE FROM order_items WHERE order_id=$1',[orderId]);await pool.query('DELETE FROM orders WHERE id=$1',[orderId]);}if(customerId){await pool.query('DELETE FROM customer_sessions WHERE customer_id=$1',[customerId]);await pool.query('DELETE FROM saved_addresses WHERE customer_id=$1',[customerId]);await pool.query('DELETE FROM customers WHERE id=$1',[customerId]);}if(testPhone){await pool.query('DELETE FROM registration_tokens WHERE phone_e164=$1',[testPhone]);await pool.query('DELETE FROM otp_challenges WHERE phone_e164=$1',[testPhone]);await pool.query('DELETE FROM auth_attempts WHERE subject_key=$1',[testPhone]);}server.close();server.closeAllConnections();await pool.end();}
