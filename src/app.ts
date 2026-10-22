@@ -70,3 +70,5 @@ const errors: ErrorRequestHandler = (error, _req, res, _next) => {
   res.status(status).json({ error: { code: expected?.code ?? (invalidJson || badInput ? 'VALIDATION_FAILED' : conflict ? 'CONFLICT' : 'INTERNAL_ERROR'), message: expected?.message ?? (invalidJson || badInput ? 'Invalid request' : conflict ? 'Record conflicts with existing data' : 'Internal server error'), ...(expected?.details === undefined ? {} : { details: expected.details }), requestId: res.locals.requestId } });
 };
 app.use(errors);
+
+export default app;
