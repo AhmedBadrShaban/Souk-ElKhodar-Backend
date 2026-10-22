@@ -1,18 +1,41 @@
 import { randomInt } from 'node:crypto';
 import { ApiError } from './http.js';
 
+function isProdLike(): boolean {
+  return ['production', 'staging'].includes(process.env['NODE_ENV'] ?? '');
+}
+
+function allowedPhones(): string[] {
+  return (process.env['OTP_TWILIO_ALLOWED_PHONES'] ?? '')
+    .split(',')
+    .map(value => value.trim())
+    .filter(Boolean); // an empty env var gives [] instead of ['']
+}
+
 export function otpMode(): 'fixed' | 'twilio_whatsapp' {
   const mode = process.env['OTP_MODE'];
-  if (mode === 'twilio_whatsapp') return mode;
-  if (mode === 'fixed' && !['production', 'staging'].includes(process.env['NODE_ENV'] ?? '')) return mode;
-  if (!mode && !['production', 'staging'].includes(process.env['NODE_ENV'] ?? '')) return 'fixed';
+  if (mode === 'twilio_whatsapp' || mode === 'fixed') return mode;
+  if (!mode && !isProdLike()) return 'fixed';
   throw new ApiError(503, 'OTP_PROVIDER_UNAVAILABLE', 'OTP provider is not configured');
 }
 
 export async function deliverOtp(phone: string): Promise<string> {
-  if (otpMode() === 'fixed') return process.env['OTP_FIXED_CODE'] || '123456';
+  const allowed = allowedPhones();
 
-  const allowed = (process.env['OTP_TWILIO_ALLOWED_PHONES'] ?? '').split(',').map(value => value.trim());
+  if (otpMode() === 'fixed') {
+    if (isProdLike()) {
+      const fixedCode = process.env['OTP_FIXED_CODE'];
+      if (!allowed.length || !fixedCode) {
+        throw new ApiError(503, 'OTP_PROVIDER_UNAVAILABLE', 'OTP provider is not configured');
+      }
+      if (!allowed.includes(phone)) {
+        throw new ApiError(403, 'OTP_TEST_ONLY', 'Fixed verification is available to approved test numbers only');
+      }
+      return fixedCode;
+    }
+    return process.env['OTP_FIXED_CODE'] || '123456';
+  }
+
   if (!allowed.includes(phone)) throw new ApiError(403, 'OTP_TEST_ONLY', 'WhatsApp verification is available to approved test numbers only');
 
   const accountSid = process.env['TWILIO_ACCOUNT_SID'] ?? '';

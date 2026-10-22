@@ -1,5 +1,7 @@
 # Temporary WhatsApp OTP with Twilio
 
+> **Egypt account limitation:** Twilio currently shows "Trials are unavailable in Egypt" for this project account. The steps below cannot be completed on that account without upgrading to Full access. Do not set `OTP_MODE=twilio_whatsapp` or deploy this option until an eligible Twilio account and its approved verification template are available. Twilio's [trial policy](https://www.twilio.com/docs/usage/trials) also states that trials are available only in selected countries. Meta's [developer test numbers](https://whatsappbusiness.com/developers/developer-hub/) are the next no-cost option to evaluate.
+
 The backend generates a fresh six-digit code, stores only its hash in `otp_challenges`, and asks Twilio to deliver it. Existing registration and phone-login screens continue to use `/v1/auth/otp/request` and `/v1/auth/otp/verify`. No Twilio credentials go to either portal. The fixed code remains available only when `OTP_MODE=fixed` in local development or tests.
 
 ## Set up the test sender
