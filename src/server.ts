@@ -1,9 +1,12 @@
 import { app } from './app.js';
 import { config } from './config.js';
 import { pool } from './db.js';
+import { attachAnnouncements } from './realtime.js';
 
 const server = app.listen(config.PORT, () => console.log(JSON.stringify({ level: 'info', message: 'API listening', port: config.PORT })));
+const stopAnnouncements = attachAnnouncements(server);
 async function shutdown(): Promise<void> {
+  stopAnnouncements();
   server.close();
   await pool.end();
 }

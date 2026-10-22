@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: souk-elkhodar-api
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /v1/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "24"
+      - key: DATABASE_URL
+        sync: false
+      - key: STOREFRONT_ORIGIN
+        sync: false
+      - key: DASHBOARD_ORIGIN
+        sync: false
+      - key: BUSINESS_TIMEZONE
+        sync: false
+      - key: TRACKING_TOKEN_SECRET
+        sync: false
+      - key: AWS_ENDPOINT_URL_S3
+        sync: false
+      - key: AWS_ACCESS_KEY_ID
+        sync: false
+      - key: AWS_SECRET_ACCESS_KEY
+        sync: false
+      - key: AWS_REGION
+        sync: false
+      - key: S3_BUCKET
+        value: products

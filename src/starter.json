@@ -1,0 +1,1198 @@
+﻿{
+    "products": [
+        {
+            "id": "1",
+            "slug": "tomatoes",
+            "name": "طماطم بلدي",
+            "nameEn": "Tomatoes",
+            "categoryId": "vegetables",
+            "unitType": "crate",
+            "unitLabel": "قفص",
+            "unitLabelEn": "crate",
+            "estimatedWeightKg": {
+                "min": 18,
+                "max": 20
+            },
+            "price": 18000,
+            "pricePerKgEstimate": 947,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [
+                "popular",
+                "new",
+                "captured_today",
+                "price_changed_today"
+            ],
+            "capturedAt": "2026-10-21T23:13:30.900Z",
+            "priceChange": {
+                "previousPrice": 19500,
+                "direction": "down"
+            },
+            "description": "طماطم بلدي من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Tomatoes from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "2",
+            "slug": "potatoes",
+            "name": "بطاطس",
+            "nameEn": "Potatoes",
+            "categoryId": "vegetables",
+            "unitType": "sack",
+            "unitLabel": "شكارة",
+            "unitLabelEn": "sack",
+            "estimatedWeightKg": {
+                "min": 24,
+                "max": 28
+            },
+            "price": 26000,
+            "pricePerKgEstimate": 1000,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [
+                "popular"
+            ],
+            "description": "بطاطس من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Potatoes from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "3",
+            "slug": "onions",
+            "name": "بصل أحمر",
+            "nameEn": "Red onions",
+            "categoryId": "vegetables",
+            "unitType": "sack",
+            "unitLabel": "شكارة",
+            "unitLabelEn": "sack",
+            "estimatedWeightKg": {
+                "min": 22,
+                "max": 25
+            },
+            "price": 22000,
+            "pricePerKgEstimate": 936,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [
+                "popular"
+            ],
+            "description": "بصل أحمر من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Red onions from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "4",
+            "slug": "cucumbers",
+            "name": "خيار بلدي",
+            "nameEn": "Cucumbers",
+            "categoryId": "vegetables",
+            "unitType": "crate",
+            "unitLabel": "قفص",
+            "unitLabelEn": "crate",
+            "estimatedWeightKg": {
+                "min": 16,
+                "max": 18
+            },
+            "price": 19000,
+            "pricePerKgEstimate": 1118,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [
+                "popular"
+            ],
+            "description": "خيار بلدي من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Cucumbers from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "5",
+            "slug": "peppers",
+            "name": "فلفل ألوان",
+            "nameEn": "Sweet peppers",
+            "categoryId": "vegetables",
+            "unitType": "crate",
+            "unitLabel": "قفص",
+            "unitLabelEn": "crate",
+            "estimatedWeightKg": {
+                "min": 12,
+                "max": 15
+            },
+            "price": 32000,
+            "pricePerKgEstimate": 2370,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [
+                "popular",
+                "captured_today"
+            ],
+            "capturedAt": "2026-10-21T23:13:30.900Z",
+            "description": "فلفل ألوان من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Sweet peppers from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "6",
+            "slug": "carrots",
+            "name": "جزر",
+            "nameEn": "Carrots",
+            "categoryId": "vegetables",
+            "unitType": "sack",
+            "unitLabel": "شكارة",
+            "unitLabelEn": "sack",
+            "estimatedWeightKg": {
+                "min": 18,
+                "max": 22
+            },
+            "price": 18000,
+            "pricePerKgEstimate": 900,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [
+                "popular"
+            ],
+            "description": "جزر من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Carrots from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "7",
+            "slug": "lemons",
+            "name": "ليمون بلدي",
+            "nameEn": "Lemons",
+            "categoryId": "fruit",
+            "unitType": "crate",
+            "unitLabel": "قفص",
+            "unitLabelEn": "crate",
+            "estimatedWeightKg": {
+                "min": 12,
+                "max": 15
+            },
+            "price": 29000,
+            "pricePerKgEstimate": 2148,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [],
+            "description": "ليمون بلدي من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Lemons from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "8",
+            "slug": "bananas",
+            "name": "موز بلدي",
+            "nameEn": "Bananas",
+            "categoryId": "fruit",
+            "unitType": "carton",
+            "unitLabel": "كرتونة",
+            "unitLabelEn": "carton",
+            "estimatedWeightKg": {
+                "min": 16,
+                "max": 18
+            },
+            "price": 35000,
+            "pricePerKgEstimate": 2059,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [
+                "price_changed_today"
+            ],
+            "priceChange": {
+                "previousPrice": 36500,
+                "direction": "down"
+            },
+            "description": "موز بلدي من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Bananas from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "9",
+            "slug": "oranges",
+            "name": "برتقال",
+            "nameEn": "Oranges",
+            "categoryId": "fruit",
+            "unitType": "crate",
+            "unitLabel": "قفص",
+            "unitLabelEn": "crate",
+            "estimatedWeightKg": {
+                "min": 18,
+                "max": 20
+            },
+            "price": 24000,
+            "pricePerKgEstimate": 1263,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [
+                "new",
+                "captured_today"
+            ],
+            "capturedAt": "2026-10-21T23:13:30.900Z",
+            "description": "برتقال من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Oranges from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "10",
+            "slug": "apples",
+            "name": "تفاح أحمر",
+            "nameEn": "Red apples",
+            "categoryId": "fruit",
+            "unitType": "carton",
+            "unitLabel": "كرتونة",
+            "unitLabelEn": "carton",
+            "estimatedWeightKg": {
+                "min": 15,
+                "max": 17
+            },
+            "price": 48000,
+            "pricePerKgEstimate": 3000,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [],
+            "description": "تفاح أحمر من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Red apples from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "11",
+            "slug": "grapes",
+            "name": "عنب أحمر",
+            "nameEn": "Red grapes",
+            "categoryId": "fruit",
+            "unitType": "crate",
+            "unitLabel": "قفص",
+            "unitLabelEn": "crate",
+            "estimatedWeightKg": {
+                "min": 12,
+                "max": 14
+            },
+            "price": 41000,
+            "pricePerKgEstimate": 3154,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [],
+            "description": "عنب أحمر من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Red grapes from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "12",
+            "slug": "mangoes",
+            "name": "مانجو عويس",
+            "nameEn": "Owais mangoes",
+            "categoryId": "fruit",
+            "unitType": "carton",
+            "unitLabel": "كرتونة",
+            "unitLabelEn": "carton",
+            "estimatedWeightKg": {
+                "min": 13,
+                "max": 15
+            },
+            "price": 62000,
+            "pricePerKgEstimate": 4429,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [],
+            "description": "مانجو عويس من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Owais mangoes from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "13",
+            "slug": "mint",
+            "name": "نعناع فريش",
+            "nameEn": "Fresh mint",
+            "categoryId": "leafy",
+            "unitType": "bundle",
+            "unitLabel": "ربطة",
+            "unitLabelEn": "bundle",
+            "estimatedWeightKg": {
+                "min": 1,
+                "max": 2
+            },
+            "price": 2500,
+            "pricePerKgEstimate": 1667,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [
+                "captured_today"
+            ],
+            "capturedAt": "2026-10-21T23:13:30.900Z",
+            "description": "نعناع فريش من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Fresh mint from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "14",
+            "slug": "parsley",
+            "name": "بقدونس",
+            "nameEn": "Parsley",
+            "categoryId": "leafy",
+            "unitType": "bundle",
+            "unitLabel": "ربطة",
+            "unitLabelEn": "bundle",
+            "estimatedWeightKg": {
+                "min": 1,
+                "max": 2
+            },
+            "price": 2000,
+            "pricePerKgEstimate": 1333,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [],
+            "description": "بقدونس من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Parsley from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "15",
+            "slug": "spinach",
+            "name": "سبانخ",
+            "nameEn": "Spinach",
+            "categoryId": "leafy",
+            "unitType": "basket",
+            "unitLabel": "سلة",
+            "unitLabelEn": "basket",
+            "estimatedWeightKg": {
+                "min": 8,
+                "max": 10
+            },
+            "price": 14000,
+            "pricePerKgEstimate": 1556,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [
+                "price_changed_today"
+            ],
+            "priceChange": {
+                "previousPrice": 15500,
+                "direction": "down"
+            },
+            "description": "سبانخ من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Spinach from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "16",
+            "slug": "lettuce",
+            "name": "خس بلدي",
+            "nameEn": "Lettuce",
+            "categoryId": "leafy",
+            "unitType": "crate",
+            "unitLabel": "قفص",
+            "unitLabelEn": "crate",
+            "estimatedWeightKg": {
+                "min": 10,
+                "max": 12
+            },
+            "price": 15000,
+            "pricePerKgEstimate": 1364,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [],
+            "description": "خس بلدي من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Lettuce from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "17",
+            "slug": "eggplant",
+            "name": "باذنجان رومي",
+            "nameEn": "Eggplant",
+            "categoryId": "vegetables",
+            "unitType": "crate",
+            "unitLabel": "قفص",
+            "unitLabelEn": "crate",
+            "estimatedWeightKg": {
+                "min": 15,
+                "max": 18
+            },
+            "price": 17000,
+            "pricePerKgEstimate": 1030,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [
+                "new",
+                "captured_today"
+            ],
+            "capturedAt": "2026-10-21T23:13:30.900Z",
+            "description": "باذنجان رومي من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Eggplant from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "18",
+            "slug": "zucchini",
+            "name": "كوسة",
+            "nameEn": "Zucchini",
+            "categoryId": "vegetables",
+            "unitType": "crate",
+            "unitLabel": "قفص",
+            "unitLabelEn": "crate",
+            "estimatedWeightKg": {
+                "min": 13,
+                "max": 15
+            },
+            "price": 21000,
+            "pricePerKgEstimate": 1500,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [],
+            "description": "كوسة من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Zucchini from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "19",
+            "slug": "garlic",
+            "name": "ثوم بلدي",
+            "nameEn": "Garlic",
+            "categoryId": "vegetables",
+            "unitType": "sack",
+            "unitLabel": "شكارة",
+            "unitLabelEn": "sack",
+            "estimatedWeightKg": {
+                "min": 18,
+                "max": 20
+            },
+            "price": 36000,
+            "pricePerKgEstimate": 1895,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [],
+            "description": "ثوم بلدي من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Garlic from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "20",
+            "slug": "cabbage",
+            "name": "كرنب",
+            "nameEn": "Cabbage",
+            "categoryId": "vegetables",
+            "unitType": "sack",
+            "unitLabel": "شكارة",
+            "unitLabelEn": "sack",
+            "estimatedWeightKg": {
+                "min": 20,
+                "max": 24
+            },
+            "price": 16000,
+            "pricePerKgEstimate": 727,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [],
+            "description": "كرنب من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Cabbage from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "21",
+            "slug": "cauliflower",
+            "name": "قرنبيط",
+            "nameEn": "Cauliflower",
+            "categoryId": "vegetables",
+            "unitType": "crate",
+            "unitLabel": "قفص",
+            "unitLabelEn": "crate",
+            "estimatedWeightKg": {
+                "min": 15,
+                "max": 17
+            },
+            "price": 18000,
+            "pricePerKgEstimate": 1125,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [
+                "captured_today"
+            ],
+            "capturedAt": "2026-10-21T23:13:30.900Z",
+            "description": "قرنبيط من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Cauliflower from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "22",
+            "slug": "green-beans",
+            "name": "فاصوليا خضرا",
+            "nameEn": "Green beans",
+            "categoryId": "vegetables",
+            "unitType": "crate",
+            "unitLabel": "قفص",
+            "unitLabelEn": "crate",
+            "estimatedWeightKg": {
+                "min": 10,
+                "max": 12
+            },
+            "price": 29000,
+            "pricePerKgEstimate": 2636,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [
+                "price_changed_today"
+            ],
+            "priceChange": {
+                "previousPrice": 30500,
+                "direction": "down"
+            },
+            "description": "فاصوليا خضرا من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Green beans from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "23",
+            "slug": "okra",
+            "name": "بامية",
+            "nameEn": "Okra",
+            "categoryId": "vegetables",
+            "unitType": "crate",
+            "unitLabel": "قفص",
+            "unitLabelEn": "crate",
+            "estimatedWeightKg": {
+                "min": 10,
+                "max": 12
+            },
+            "price": 45000,
+            "pricePerKgEstimate": 4091,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [],
+            "description": "بامية من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Okra from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "24",
+            "slug": "sweet-potatoes",
+            "name": "بطاطا",
+            "nameEn": "Sweet potatoes",
+            "categoryId": "vegetables",
+            "unitType": "sack",
+            "unitLabel": "شكارة",
+            "unitLabelEn": "sack",
+            "estimatedWeightKg": {
+                "min": 22,
+                "max": 25
+            },
+            "price": 24000,
+            "pricePerKgEstimate": 1021,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [],
+            "description": "بطاطا من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Sweet potatoes from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "25",
+            "slug": "watermelon",
+            "name": "بطيخ",
+            "nameEn": "Watermelon",
+            "categoryId": "fruit",
+            "unitType": "basket",
+            "unitLabel": "سلة",
+            "unitLabelEn": "basket",
+            "estimatedWeightKg": {
+                "min": 25,
+                "max": 30
+            },
+            "price": 39000,
+            "pricePerKgEstimate": 1418,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": false,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [
+                "new",
+                "captured_today"
+            ],
+            "capturedAt": "2026-10-21T23:13:30.900Z",
+            "description": "بطيخ من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Watermelon from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "26",
+            "slug": "strawberries",
+            "name": "فراولة",
+            "nameEn": "Strawberries",
+            "categoryId": "fruit",
+            "unitType": "carton",
+            "unitLabel": "كرتونة",
+            "unitLabelEn": "carton",
+            "estimatedWeightKg": {
+                "min": 10,
+                "max": 12
+            },
+            "price": 42000,
+            "pricePerKgEstimate": 3818,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [],
+            "description": "فراولة من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Strawberries from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "27",
+            "slug": "guava",
+            "name": "جوافة",
+            "nameEn": "Guava",
+            "categoryId": "fruit",
+            "unitType": "crate",
+            "unitLabel": "قفص",
+            "unitLabelEn": "crate",
+            "estimatedWeightKg": {
+                "min": 15,
+                "max": 18
+            },
+            "price": 28000,
+            "pricePerKgEstimate": 1697,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [],
+            "description": "جوافة من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Guava from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "28",
+            "slug": "peaches",
+            "name": "خوخ",
+            "nameEn": "Peaches",
+            "categoryId": "fruit",
+            "unitType": "carton",
+            "unitLabel": "كرتونة",
+            "unitLabelEn": "carton",
+            "estimatedWeightKg": {
+                "min": 12,
+                "max": 14
+            },
+            "price": 49000,
+            "pricePerKgEstimate": 3769,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": false,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [],
+            "description": "خوخ من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Peaches from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "29",
+            "slug": "dates",
+            "name": "بلح",
+            "nameEn": "Dates",
+            "categoryId": "fruit",
+            "unitType": "carton",
+            "unitLabel": "كرتونة",
+            "unitLabelEn": "carton",
+            "estimatedWeightKg": {
+                "min": 15,
+                "max": 18
+            },
+            "price": 44000,
+            "pricePerKgEstimate": 2667,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [
+                "captured_today",
+                "price_changed_today"
+            ],
+            "capturedAt": "2026-10-21T23:13:30.900Z",
+            "priceChange": {
+                "previousPrice": 45500,
+                "direction": "down"
+            },
+            "description": "بلح من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Dates from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "30",
+            "slug": "arugula",
+            "name": "جرجير",
+            "nameEn": "Arugula",
+            "categoryId": "leafy",
+            "unitType": "bundle",
+            "unitLabel": "ربطة",
+            "unitLabelEn": "bundle",
+            "estimatedWeightKg": {
+                "min": 1,
+                "max": 2
+            },
+            "price": 2500,
+            "pricePerKgEstimate": 1667,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [],
+            "description": "جرجير من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Arugula from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "31",
+            "slug": "dill",
+            "name": "شبت",
+            "nameEn": "Dill",
+            "categoryId": "leafy",
+            "unitType": "bundle",
+            "unitLabel": "ربطة",
+            "unitLabelEn": "bundle",
+            "estimatedWeightKg": {
+                "min": 1,
+                "max": 2
+            },
+            "price": 2500,
+            "pricePerKgEstimate": 1667,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": true,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [],
+            "description": "شبت من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Dill from the wholesale market. Weight is an estimate and may vary."
+        },
+        {
+            "id": "32",
+            "slug": "coriander",
+            "name": "كزبرة خضرا",
+            "nameEn": "Coriander",
+            "categoryId": "leafy",
+            "unitType": "bundle",
+            "unitLabel": "ربطة",
+            "unitLabelEn": "bundle",
+            "estimatedWeightKg": {
+                "min": 1,
+                "max": 2
+            },
+            "price": 2500,
+            "pricePerKgEstimate": 1667,
+            "cover": {
+                "url": "/assets/products/placeholder.svg",
+                "width": 640,
+                "height": 480
+            },
+            "availability": {
+                "inStock": false,
+                "maxPerOrder": 12
+            },
+            "priceUpdatedAt": "2026-10-21T23:13:30.900Z",
+            "tags": [],
+            "description": "كزبرة خضرا من سوق الجملة، الوزن تقديري وقد يختلف حسب المحصول.",
+            "descriptionEn": "Coriander from the wholesale market. Weight is an estimate and may vary."
+        }
+    ],
+    "categories": [
+        {
+            "id": "vegetables",
+            "slug": "vegetables",
+            "name": "خضار",
+            "nameEn": "Vegetables",
+            "productCount": 14,
+            "imageUrl": "/assets/products/placeholder.svg",
+            "sortOrder": 1
+        },
+        {
+            "id": "fruit",
+            "slug": "fruit",
+            "name": "فاكهة",
+            "nameEn": "Fruit",
+            "productCount": 11,
+            "imageUrl": "/assets/products/placeholder.svg",
+            "sortOrder": 2
+        },
+        {
+            "id": "leafy",
+            "slug": "leafy",
+            "name": "ورقيات",
+            "nameEn": "Leafy greens",
+            "productCount": 7,
+            "imageUrl": "/assets/products/placeholder.svg",
+            "sortOrder": 3
+        }
+    ],
+    "areas": [
+        {
+            "id": "maadi",
+            "name": "المعادي",
+            "nameEn": "Maadi",
+            "shippingFee": 7500,
+            "isActive": true
+        },
+        {
+            "id": "nasr",
+            "name": "مدينة نصر",
+            "nameEn": "Nasr City",
+            "shippingFee": 7500,
+            "isActive": true
+        },
+        {
+            "id": "heliopolis",
+            "name": "مصر الجديدة",
+            "nameEn": "Heliopolis",
+            "shippingFee": 7500,
+            "isActive": true
+        },
+        {
+            "id": "new-cairo",
+            "name": "القاهرة الجديدة",
+            "nameEn": "New Cairo",
+            "shippingFee": 7500,
+            "isActive": true
+        }
+    ],
+    "faqs": [
+        {
+            "id": "delivery",
+            "question": "إمتى يوصل الطلب؟",
+            "answer": "الصبح بعد تأكيد طلبك بالتليفون.",
+            "sortOrder": 1
+        },
+        {
+            "id": "weight",
+            "question": "هل السعر بالكيلو؟",
+            "answer": "السعر للوحدة الموضحة، وسعر الكيلو تقديري.",
+            "sortOrder": 2
+        },
+        {
+            "id": "payment",
+            "question": "طرق الدفع؟",
+            "answer": "كاش عند الاستلام.",
+            "sortOrder": 3
+        }
+    ],
+    "pages": [
+        {
+            "slug": "about",
+            "title": "عن سوق الخضار",
+            "bodyHtml": "<p>نوصل خضار وفاكهة من سوق الجملة لحد بابك.</p>",
+            "updatedAt": "2026-10-21T23:13:31.113Z"
+        },
+        {
+            "slug": "terms",
+            "title": "الشروط",
+            "bodyHtml": "<p>الأسعار والأوزان قد تتغير حسب سوق الجملة. نؤكد الطلب معك قبل الشراء.</p>",
+            "updatedAt": "2026-10-21T23:13:31.113Z"
+        },
+        {
+            "slug": "privacy",
+            "title": "الخصوصية",
+            "bodyHtml": "<p>نستخدم بيانات التواصل والتوصيل لتنفيذ الطلب فقط.</p>",
+            "updatedAt": "2026-10-21T23:13:31.114Z"
+        }
+    ],
+    "announcements": [
+        {
+            "id": "market-prices",
+            "textAr": "أسعار السوق اتحدّثت النهارده",
+            "textEn": "Today's market prices are updated"
+        },
+        {
+            "id": "fresh-produce",
+            "textAr": "خضار وفاكهة طازة من سوق الجملة",
+            "textEn": "Fresh fruit and vegetables from the wholesale market"
+        },
+        {
+            "id": "delivery",
+            "textAr": "بنوصّل طلبك لحد باب البيت",
+            "textEn": "We deliver your order to your door"
+        },
+        {
+            "id": "confirmation",
+            "textAr": "بنكلمك لتأكيد الطلب قبل الشراء",
+            "textEn": "We call to confirm before buying from the market"
+        },
+        {
+            "id": "clear-prices",
+            "textAr": "السعر والوزن التقريبي واضحين قبل ما تطلب",
+            "textEn": "See prices and estimated weights before ordering"
+        }
+    ],
+    "config": {
+        "brand": {
+            "nameAr": "سوق الخضار",
+            "nameEn": "Souk El Khodar",
+            "sloganAr": "خضارك من سوق الجملة لحد بابك",
+            "sloganEn": "Wholesale freshness, delivered to your door",
+            "logoUrl": "/assets/logos/logo-horizontal-light.svg",
+            "heroImageUrl": "/assets/hero-1.jpg",
+            "hero2ImageUrl": "/assets/hero-2.jpg"
+        },
+        "theme": {
+            "primary": "#1E6B3C",
+            "primaryContrast": "#FFFFFF",
+            "secondary": "#F4B13D",
+            "board": "#12301F",
+            "accent": "#D23B26",
+            "bg": "#F5F7F2",
+            "surface": "#FFFFFF",
+            "ink": "#16221B",
+            "muted": "#5B6B60",
+            "line": "#DDE4DA",
+            "radius": "16px",
+            "dark": {
+                "primary": "#4FB26F",
+                "primaryContrast": "#0A1D13",
+                "secondary": "#F4B13D",
+                "accent": "#F0715D",
+                "board": "#0A1D13",
+                "bg": "#0F1712",
+                "surface": "#17221B",
+                "ink": "#E8F0EA",
+                "muted": "#9DB0A2",
+                "line": "#26352B"
+            }
+        },
+        "commerce": {
+            "currencyAr": "ج.م",
+            "currencyEn": "EGP",
+            "shippingFee": 7500,
+            "cutoffTime": "20:00",
+            "deliveryWindowStart": "08:00",
+            "deliveryWindowEnd": "12:00",
+            "authMode": "both",
+            "timezone": "Africa/Cairo"
+        },
+        "locales": {
+            "default": "ar",
+            "supported": [
+                "ar",
+                "en"
+            ]
+        },
+        "contact": {
+            "phone": "",
+            "whatsapp": ""
+        },
+        "features": {
+            "realtime": true,
+            "onlinePayment": false,
+            "pwa": false,
+            "maintenance": false
+        },
+        "seo": {
+            "titleAr": "سوق الخضار",
+            "titleEn": "Souk El Khodar",
+            "descriptionAr": "خضار وفاكهة من سوق الجملة",
+            "descriptionEn": "Wholesale fruit and vegetables"
+        },
+        "apiBaseUrl": "/mock-api/v1"
+    },
+    "strings": {
+        "ar": {},
+        "en": {}
+    }
+}

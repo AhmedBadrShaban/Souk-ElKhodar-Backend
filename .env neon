@@ -1,0 +1,25 @@
+NODE_ENV=development
+PORT=4300
+DATABASE_URL=postgresql://souk:SoukElKhodar123@127.0.0.1:5433/souk_dev
+POSTGRES_PASSWORD=SoukElKhodar123
+STOREFRONT_ORIGIN=http://localhost:4200
+DASHBOARD_ORIGIN=http://localhost:4201
+BUSINESS_TIMEZONE=Africa/Cairo
+PUBLIC_SITE_URL=https://storefront.example.com
+PUBLIC_API_BASE_URL=/v1
+# Development and test only. Production OTP requests require a provider integration.
+OTP_FIXED_CODE=123456
+# Development and test seed accounts only.
+MOCK_ADMIN_PASSWORD=DemoAdmin123!
+# Set a long random value before production. Changing it invalidates guest order links.
+TRACKING_TOKEN_SECRET=replace-with-a-long-random-secret
+# Product media uploads: backend-only Neon S3-compatible storage credentials.
+AWS_ENDPOINT_URL_S3=https://br-withered-meadow-b9umm7ws.storage.c-7.eu-central-1.aws.neon.tech
+AWS_ACCESS_KEY_ID=nak_live_6269b8be810f43e58b6dc2e424c83d03
+AWS_SECRET_ACCESS_KEY=nsk_live_95078a6d68ad7d481190e4085e61ca1d7de24eddcad28accb1e8541502ebc6ad
+AWS_REGION=eu-central-1
+S3_BUCKET=products
+# One-time production owner bootstrap, supplied only while running bootstrap:owner:
+# ADMIN_BOOTSTRAP_EMAIL=
+# ADMIN_BOOTSTRAP_PASSWORD=
+# ADMIN_BOOTSTRAP_NAME=

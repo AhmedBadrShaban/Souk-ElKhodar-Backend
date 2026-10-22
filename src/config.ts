@@ -15,3 +15,4 @@ const schema = z.object({
 });
 
 export const config = schema.parse(process.env);
+export const allowedOrigins = new Set([config.STOREFRONT_ORIGIN, config.DASHBOARD_ORIGIN].filter((origin): origin is string => Boolean(origin)).map(origin => new URL(origin).origin));
