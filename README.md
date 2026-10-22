@@ -15,7 +15,7 @@ Migrations run in filename order, use a PostgreSQL advisory lock, and record eac
 
 In development, `seed` creates four demo dashboard accounts: `owner@souk.local`, `operations@souk.local`, `catalog@souk.local`, and `viewer@souk.local`. They use `MOCK_ADMIN_PASSWORD` (default `DemoAdmin123!`). Seeding does not create admin accounts in staging or production. Do not point a public deployment at the development database.
 
-For a fresh production database, migrate and seed catalog/content, then supply `ADMIN_BOOTSTRAP_EMAIL` and a strong `ADMIN_BOOTSTRAP_PASSWORD` privately and run `npm.cmd run bootstrap:owner` once. This command refuses to run after an admin user exists. Set a persistent random `TRACKING_TOKEN_SECRET` before accepting orders; changing it invalidates existing guest tracking links. Production OTP requests remain unavailable until an SMS/WhatsApp provider is integrated.
+For a fresh production database, migrate and seed catalog/content, then supply `ADMIN_BOOTSTRAP_EMAIL` and a strong `ADMIN_BOOTSTRAP_PASSWORD` privately and run `npm.cmd run bootstrap:owner` once. This command refuses to run after an admin user exists. Set a persistent random `TRACKING_TOKEN_SECRET` before accepting orders; changing it invalidates existing guest tracking links. OTP delivery is controlled by `OTP_MODE`; see [TWILIO-OTP.md](TWILIO-OTP.md) for the temporary WhatsApp test setup.
 
 ## Portal configuration
 

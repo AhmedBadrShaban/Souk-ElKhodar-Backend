@@ -4,6 +4,7 @@ import type { Request, Response } from 'express';
 import { pool } from './db.js';
 import { ApiError, asObject, asText, send } from './http.js';
 import { allAreas, publicConfig } from './public.js';
+import { deliverOtp } from './otp-delivery.js';
 
 const phonePattern = /^(?:\+20|20|0)1[0125]\d{8}$/;
 export const normalizePhone = (value: string): string => {
@@ -77,8 +78,7 @@ authRouter.post('/auth/otp/request', async (req,res) => {
   await limitAction(phone, `otp:${purpose}`, 5, 15);
   const recent = await pool.query('SELECT id FROM otp_challenges WHERE phone_e164=$1 AND purpose=$2 AND created_at>now()-interval \'60 seconds\' LIMIT 1', [phone,purpose]);
   if (recent.rowCount) throw new ApiError(429, 'OTP_RATE_LIMITED', 'Wait before requesting another code');
-  if (process.env['NODE_ENV'] === 'production' || process.env['NODE_ENV'] === 'staging') throw new ApiError(503, 'OTP_PROVIDER_UNAVAILABLE', 'OTP provider is not configured');
-  const code = process.env['OTP_FIXED_CODE'] || '123456', id = randomUUID();
+  const code = await deliverOtp(phone), id = randomUUID();
   await pool.query(`INSERT INTO otp_challenges(id,phone_e164,purpose,code_hash,expires_at,resend_after) VALUES($1,$2,$3,$4,now()+interval '5 minutes',now()+interval '60 seconds')`, [id,phone,purpose,hashToken(`${id}:${code}`)]);
   send(res,{requestId:id,expiresInSec:300,resendAfterSec:60});
 });
